@@ -5,11 +5,8 @@ Projecte per a l'assignatura AEA5.2. Implementa un CRUD complet sobre una taula 
 ## Estructura de la base de dades
 
 ```sql
-CREATE TABLE videojocs (
+CREATE TABLE videojuegos (
     id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    nom VARCHAR(255) NOT NULL,
-    descripcio TEXT,
-    desenvolupadora VARCHAR(255),
-    any_llancament YEAR,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    nombre VARCHAR(255),
+    descripcion VARCHAR(255)
 );
